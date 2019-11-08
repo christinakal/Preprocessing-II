@@ -1,1 +1,43 @@
-// Navigation Styles here
+// Navigation Styles here 
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    padding-bottom:0;
+    //border-bottom: 2px dashed @silver;
+
+    @media @mobile{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav{
+        line-height: 35px;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+
+        @media @mobile{
+            width: 100%;
+            text-align: center;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }// nav
+    
+}
+
+hr{
+    width: 100vw;
+    position: relative;
+    left: calc(-50vw + 50%);
+    border-top: 2px dashed @silver;
+    margin-bottom:0;
+    padding-bottom:0;
+    border-bottom: 0;
+}
